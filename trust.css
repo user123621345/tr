@@ -1528,8 +1528,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
       .text-utility-1-opacity-2 {
         --tw-text-opacity: 1;
-        color: hsl(var(--twc-utility-1-opacity-2) / 1);
-        color: hsl(var(--twc-utility-1-opacity-2) / var(--twc-utility-1-opacity-2-opacity, var(--tw-text-opacity)));
+        color: #474849;
       }
 
       .text-utility-1-opacity-3 {
@@ -1841,6 +1840,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 100%;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     transform: translateY(0px);
+  padding-bottom: 6rem;
 }
 .trade-circle {
   width: 50px;
