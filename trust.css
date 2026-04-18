@@ -52,31 +52,7 @@
         /* 7 */
       }
 
-      /*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-      body {
-        margin: 0;
-        /* 1 */
-        line-height: inherit;
-        /* 2 */
-      }
-
-      /*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
-      /*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-      /*
-Remove the default font size and weight for headings.
-*/
-      
+  
       h2,
       h3 {
         font-size: inherit;
@@ -287,7 +263,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         -ms-overflow-style: none;
         scrollbar-width: none;
         margin: 0px;
-        overflow: hidden;
         --tw-bg-opacity: 1;
         background-color: #1B1B1C;
         padding: 0px;
@@ -1851,7 +1826,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 }
 .wallet-pill {
   background-color: #363637;
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 0.5rem;
 }
 .content-wrapper {
   height: 100%;
