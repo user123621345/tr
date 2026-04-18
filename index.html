@@ -1,4 +1,4 @@
-<html style="width: 375px;" data-theme="dark" data-headlessui-focus-visible="">
+<html data-theme="dark" data-headlessui-focus-visible="">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -174,7 +174,10 @@
         background-color: #223F2E;
         border-radius: 9999px;
         padding: 6px 10px;
-        width: 80px;
+      }
+      .bottom-pill-main > div {
+        flex: 1;
+        padding: 6px 10px;
       }
       /* Fix height chain for scrolling */
       html, body {
@@ -196,17 +199,17 @@
       <div class="relative flex flex-col flex-1 w-full h-full self-center md:max-w-[438px] ">
         <div class="relative flex flex-col flex-1 w-full h-full" style="min-height: 0; overflow: hidden;">
           <!-- Header: Settings | Search | Scan (fixed outside scroll) -->
-            <div class="flex items-center justify-between mb-4 gap-4" style="position: relative; z-index: 100; background: transparent; padding: 16px;">
+            <div class="flex items-center justify-between mb-4 gap-4" style="position: relative; z-index: 100; background: transparent; padding: 0 24px;">
               <!-- Settings Button -->
               <button data-testid="wallet-header-settings-button" type="button" class="outline-none bg-transparent p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.65 3L9.93163 3.53449L9.32754 5.54812L7.47651 4.55141L6.5906 4.68143L4.68141 6.59062L4.55139 7.47652L5.5481 9.32755L3.53449 9.93163L3 10.65V13.35L3.53449 14.0684L5.54811 14.6725L4.55142 16.5235L4.68144 17.4094L6.59063 19.3186L7.47653 19.4486L9.32754 18.4519L9.93163 20.4655L10.65 21H13.35L14.0684 20.4655L14.6725 18.4519L16.5235 19.4486L17.4094 19.3185L19.3186 17.4094L19.4486 16.5235L18.4519 14.6724L20.4655 14.0684L21 13.35V10.65L20.4655 9.93163L18.4519 9.32754L19.4486 7.47654L19.3186 6.59063L17.4094 4.68144L16.5235 4.55142L14.6725 5.54812L14.0684 3.53449L13.35 3H10.65ZM10.4692 6.96284L11.208 4.5H12.792L13.5308 6.96284L13.8753 7.0946C13.9654 7.12908 14.0543 7.16597 14.142 7.2052L14.4789 7.35598L16.7433 6.13668L17.8633 7.25671L16.644 9.52111L16.7948 9.85803C16.834 9.9457 16.8709 10.0346 16.9054 10.1247L17.0372 10.4692L19.5 11.208V12.792L17.0372 13.5308L16.9054 13.8753C16.8709 13.9654 16.834 14.0543 16.7948 14.1419L16.644 14.4789L17.8633 16.7433L16.7433 17.8633L14.4789 16.644L14.142 16.7948C14.0543 16.834 13.9654 16.8709 13.8753 16.9054L13.5308 17.0372L12.792 19.5H11.208L10.4692 17.0372L10.1247 16.9054C10.0346 16.8709 9.94569 16.834 9.85803 16.7948L9.52111 16.644L7.25671 17.8633L6.13668 16.7433L7.35597 14.4789L7.2052 14.142C7.16597 14.0543 7.12908 13.9654 7.0946 13.8753L6.96284 13.5308L4.5 12.792L4.5 11.208L6.96284 10.4692L7.0946 10.1247C7.12907 10.0346 7.16596 9.94571 7.20519 9.85805L7.35596 9.52113L6.13666 7.2567L7.25668 6.13667L9.5211 7.35598L9.85803 7.2052C9.9457 7.16597 10.0346 7.12908 10.1247 7.0946L10.4692 6.96284ZM14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12ZM15.75 12C15.75 14.0711 14.0711 15.75 12 15.75C9.92893 15.75 8.25 14.0711 8.25 12C8.25 9.92893 9.92893 8.25 12 8.25C14.0711 8.25 15.75 9.92893 15.75 12Z" fill="grey"/>
                 </svg>
               </button>
 
               <!-- Search Bar -->
               <div class="flex-1 mx-3">
-                <div class="flex items-center bg-utility-1-opacity-5 rounded-full px-4 py-2">
+                <div class="flex items-center bg-utility-1-opacity-5 rounded-full px-4 gap-2" style="padding-top: 10px; padding-bottom: 10px;">
                   <svg class="text-utility-1-opacity-2 mr-2" fill="none" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6262 1.99976C15.3904 1.99976 19.2527 5.86217 19.2528 10.6263C19.2528 12.3718 18.7333 13.9969 17.8415 15.355L21.4847 18.9983L21.6059 19.1326C22.1688 19.8231 22.1282 20.8412 21.4847 21.4848C20.841 22.1285 19.8222 22.1693 19.1316 21.6059L18.9983 21.4848L15.355 17.8415C13.9969 18.7333 12.3718 19.2528 10.6262 19.2528C5.86214 19.2527 1.99973 15.3904 1.99973 10.6263C1.99981 5.86222 5.86219 1.99984 10.6262 1.99976ZM10.6262 5.51628C7.80427 5.51636 5.51633 7.8043 5.51625 10.6263C5.51625 13.4483 7.80422 15.7362 10.6262 15.7363C13.4483 15.7363 15.7362 13.4484 15.7362 10.6263C15.7362 7.80425 13.4483 5.51628 10.6262 5.51628Z" fill="currentColor"></path>
                   </svg>
@@ -241,7 +244,7 @@
               <!-- Main Wallet pill with copy button -->
               <div class="flex items-center justify-center space-x-2">
                 <div class="flex items-center rounded-full px-3 py-1 wallet-pill">
-                  <span class="typography-body-14 text-utility-1-default font-medium">Main Wallet</span>
+                  <span class="typography-header-16 text-utility-1-default font-medium">Main Wallet 1</span>
                 </div>
                 <button class="outline-none p-1" type="button">
                   <svg class="text-utility-1-opacity-2" fill="none" width="16" height="16" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +254,7 @@
               </div>
               <!-- Total balance -->
               <div class="flex flex-col items-center justify-center">
-                <h2 data-testid="total-asset-balance" class="typography-header-32 text-utility-1-default font-semibold">
+                <h2 data-testid="total-asset-balance" class="text-utility-1-default font-semibold" style="font-size: 40px;">
                   <span>$45.73</span>
                 </h2>
                 <!-- Daily change -->
@@ -259,7 +262,7 @@
                   <span class="daily-change-value">▲ $1.24 (2.78%)</span>
                 </p>
               </div>
-              <div data-testid="dashboard-wallet-board" class="flex items-center justify-center gap-6">
+              <div data-testid="dashboard-wallet-board" class="flex items-center justify-center" style="gap: 26px;">
                 <div class="flex flex-col space-y-2 items-center">
                   <div data-tooltip-id="circle-action-tooltip-16" data-tooltip-place="top" data-tooltip-role="tooltip">
                     <div class="flex " data-tooltip-id="button-tooltip-17" data-tooltip-place="top-end" data-tooltip-role="tooltip">
@@ -346,8 +349,8 @@
                   </div>
                 </button>
               </div>
-              <div class="flex space-x-4">
-                <div class="flex w-auto" data-tooltip-id="button-tooltip-27" data-tooltip-place="top-end" data-tooltip-role="tooltip">
+              <div class="flex" style="margin-right: 6px;">
+                <div class="flex w-auto" data-tooltip-id="button-tooltip-27" data-tooltip-place="top-end" data-tooltip-role="tooltip" style="margin-right: 18px;">
                   <button data-testid="wallet-assets-history-button" type="button" class="outline-none bg-transparent text-background-1 text-subheader-16 leading-subheader-16 default-button !p-0 w-auto  ">
                     <svg class="text-utility-1-opacity-1" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M23.109 12C23.109 17.58 18.569 22.12 12.989 22.12C10.049 22.12 7.25903 20.85 5.33903 18.63C5.13903 18.4 5.04902 18.11 5.06902 17.81C5.08902 17.51 5.22903 17.24 5.44903 17.04C5.65903 16.87 5.91903 16.77 6.18903 16.77C6.51903 16.77 6.82902 16.91 7.03902 17.16C8.53902 18.88 10.699 19.88 12.989 19.88C17.329 19.88 20.859 16.34 20.859 12C20.859 7.66 17.329 4.12 12.989 4.12C9.09903 4.12 5.82903 6.91 5.21903 10.76L5.18903 10.9H6.01903C6.46903 10.9 6.87903 11.17 7.05903 11.6C7.22903 12.02 7.12903 12.5 6.80903 12.82L4.80903 14.82C4.59903 15.04 4.31903 15.15 4.01903 15.15C3.71903 15.15 3.42903 15.04 3.21903 14.82L1.21903 12.82C0.89903 12.5 0.799024 12.02 0.979024 11.6C1.14902 11.17 1.55903 10.9 2.01903 10.9H2.92902V10.79C3.54902 5.71 7.86903 1.88 12.989 1.88C18.569 1.88 23.109 6.42 23.109 12Z" fill="currentColor" fill-opacity="0.72"></path>
@@ -738,8 +741,8 @@
       </div>
           </div><!-- end content-wrapper -->
       <!-- Floating Bottom Navbar Pill -->
-      <div class="absolute bottom-3 left-4 right-4 z-10" style="bottom: 10px; width: calc(100% - 2rem); left: 1rem; right: 1rem; position: fixed; z-index: 9998;">
-        <div class="flex items-center justify-between rounded-full" style="box-shadow: 0 4px 20px rgba(0,0,0,0.3); background-color: #1B1B1C; border: 1px solid #313133; padding: 4px 1px;">
+      <div class="absolute bottom-3 left-4 right-4 z-10" style="bottom: 14px; width: calc(100% - 2rem); left: 1rem; right: 1rem; position: fixed; z-index: 9998;">
+        <div class="flex items-center justify-between rounded-full bottom-pill-main" style="box-shadow: 0 4px 20px rgba(0,0,0,0.3); background-color: #1B1B1C; border: 1px solid #313133; padding: 4px 1px;">
           <div data-testid="navigation-item-home" class="flex flex-col w-14 py-1 text-center items-center nav-item-active" role="button">
             <span class="flex justify-center mb-0.5">
               <svg class="text-primary" fill="none" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
